@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 15:06:29 by ari               #+#    #+#             */
-/*   Updated: 2023/01/28 18:06:27 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:22:13 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 Appends a string to anohter, with a maximum limit for the dest string.
@@ -29,9 +29,9 @@ int	main(void)
 {
 	char	str1[] = "amaaaz";
 	char	str2[] = "eballzzz!";
-	
+
 	ft_strcat(str1, str2);
-	
+
 	printf("%s", ft_strcat(str1, str2));
 	return (0);
 }*/

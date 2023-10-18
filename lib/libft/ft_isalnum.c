@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
-/* 
+/*
 checks if a character is alphanumeric (a letter or a number).
 1 parameter: The character to be checked.
 */

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 22:52:48 by ari               #+#    #+#             */
-/*   Updated: 2023/02/05 00:25:18 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:22:23 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 Applies the function ’f’ to each character of the

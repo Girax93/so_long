@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 15:06:47 by ari               #+#    #+#             */
-/*   Updated: 2023/01/28 18:09:06 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:22:20 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 copies a string to another, with a maximum size limit for the destination string.

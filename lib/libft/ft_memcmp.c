@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 11:55:20 by ari               #+#    #+#             */
-/*   Updated: 2023/01/24 17:59:26 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:21:17 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "../../include/libft.h"
 
 /* compares "n" bytes of two memory areas. */
 

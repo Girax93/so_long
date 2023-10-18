@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
-/* 
-checks if a character is an ASCII character. 
+/*
+checks if a character is an ASCII character.
 1 parameter: the character to be checked.
 */
 

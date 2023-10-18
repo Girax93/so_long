@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
-copies one memory area to another. 
+copies one memory area to another.
 3 parameters: 1st = a pointer to the destination memory area
 2nd = a pointer to the source memory area
 3rd = the number of bytes to copy.
@@ -26,7 +26,7 @@ int main(void) {
   char src[] = "Hello, world!";
   char dest[sizeof src];
 
-  if (ft_memcpy(dest, src, sizeof src) == NULL) 
+  if (ft_memcpy(dest, src, sizeof src) == NULL)
   {
     printf("Error: memcpy failed\n");
     return 1;

@@ -6,7 +6,7 @@
 #    By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/02 15:33:25 by agrawe            #+#    #+#              #
-#    Updated: 2023/10/12 17:49:45 by agrawe           ###   ########.fr        #
+#    Updated: 2023/10/18 15:48:41 by agrawe           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME_BONUS	=	so_long_bonus
 CFLAGS		:=	-g -O0 -Wextra -Wall -Werror -Wunreachable-code -Ofast
 LIBMLX		:=	./lib/MLX42
 LIBFT		:=	./lib/libft/libft.a
-PRINTF		:=	./lib/printf/libftprintf.a
+PRINTF		:=	./lib/ft_printf/libftprintf.a
 SDL_DIR		=	./lib/SDL
 SRC_DIR		=	src/
 OBJ_DIR 	=	objs/
@@ -51,7 +51,7 @@ BSRCS	:=	check_map_2_bonus.c  \
 			check_map.c \
 			collectibles.c \
 			draw_images.c \
-			exit.c \
+			exit_bonus.c \
 			image_utilities.c \
 			image_utilities2.c \
 			key_hook.c \
@@ -83,26 +83,28 @@ $(NAME_BONUS): $(BOBJS) $(LIBFT) $(PRINTF)
 # as well as rules for the .c and .o files.
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 	@mkdir -p $(OBJ_DIR)
-	@$(CC) $(CFLAGS) -o $@ -c $< $(HEADERS) && printf "Compiling: $(notdir $<)"
+	@$(CC) $(CFLAGS) -o $@ -c $< $(HEADERS) && printf "Compiling: $(notdir $<) "
 
 $(LIBFT):
 	@$(MAKE) -C ./lib/libft >/dev/null
 	@echo "$(GREEN) Libft compiled $(RESET)"
 
 $(PRINTF):
-	@$(MAKE) -C ./lib/printf >/dev/null
+	@$(MAKE) -C ./lib/ft_printf >/dev/null
 	@echo -e "$(GREEN) Printf compiled $(RESET)"
 
 clean:
 	@rm -rf $(OBJS)
 	@rm -rf $(LIBMLX)/build
-	@rm -rf $(shell find ./lib/printf -iname "*.o")
+#	@rm -rf $(shell find ./lib/ft_printf -iname "*.o")
 	@rm -rf $(OBJ_DIR)
-	@make clean -C ./lib/libft >/dev/null
+	@make fclean -C ./lib/libft >/dev/null
+	@make fclean -C ./lib/ft_printf >/dev/null
 
 fclean: clean
 	@rm -rf $(NAME)
 	@rm -rf $(NAME_BONUS)
+	@echo "-- Clean AF --"
 
 re: clean all
 

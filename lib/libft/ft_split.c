@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 13:06:19 by ari               #+#    #+#             */
-/*   Updated: 2023/02/25 20:21:28 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:21:51 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 splits a string into an array of strings. Takes a character as a delimiter
@@ -108,7 +108,7 @@ char	**ft_split(char const *s, char c)
 /*
 #include <stdio.h>
 
-int	main(void) 
+int	main(void)
 {
     char const *s = "Try me, hehe:)";
     char c = ' ';

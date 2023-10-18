@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 13:11:36 by ari               #+#    #+#             */
-/*   Updated: 2023/02/04 21:29:05 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:21:55 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
-searches for a character in a string. 
+searches for a character in a string.
 2 parameters: 1st = a pointer to the string
 2nd = the character to search for.
 returns a pointer to the first occurrence of the character in the string,

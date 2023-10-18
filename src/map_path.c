@@ -6,7 +6,7 @@
 /*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 17:05:48 by agrawe            #+#    #+#             */
-/*   Updated: 2023/10/13 16:07:02 by agrawe           ###   ########.fr       */
+/*   Updated: 2023/10/18 14:53:17 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ int	*start_pos(char **map)
 	int	*pos;
 
 	pos = (int *)ft_calloc(2, sizeof(int));
-
 	y = 0;
 	while (map[y])
 	{

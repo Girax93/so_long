@@ -6,7 +6,7 @@
 /*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 15:52:19 by agrawe            #+#    #+#             */
-/*   Updated: 2023/10/13 16:30:48 by agrawe           ###   ########.fr       */
+/*   Updated: 2023/10/18 14:52:43 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ void	delete_orbs(t_game *game)
 	count = game->total_collectibles;
 	player_pos = game->imag->chara->instances;
 	collectible_pos = game->imag->collec->instances;
-
 	while (i < count)
 	{
 		if (collectible_pos[i].enabled \

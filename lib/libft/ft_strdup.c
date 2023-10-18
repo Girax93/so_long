@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 13:55:41 by ari               #+#    #+#             */
-/*   Updated: 2023/01/28 17:52:15 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:22:00 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 creates a duplicate of a string.
@@ -35,7 +35,7 @@ char	*ft_strdup(const char *s)
 /*
 #include <stdio.h>
 
-int main() 
+int main()
 {
     char *original = "hello, world!";
     char *copy = ft_strdup(original);

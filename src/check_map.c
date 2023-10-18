@@ -6,7 +6,7 @@
 /*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 15:53:04 by agrawe            #+#    #+#             */
-/*   Updated: 2023/10/13 16:38:51 by agrawe           ###   ########.fr       */
+/*   Updated: 2023/10/18 13:38:27 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 //	These functions are relatively self explainatory.
 //	So not every function will have a comment.
+
 int	is_map_empty(char **map)
 {
 	if (map[0])

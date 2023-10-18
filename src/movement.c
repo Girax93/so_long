@@ -6,12 +6,11 @@
 /*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 15:50:58 by agrawe            #+#    #+#             */
-/*   Updated: 2023/10/13 15:53:12 by agrawe           ###   ########.fr       */
+/*   Updated: 2023/10/18 14:52:17 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/so_long.h"
-
 
 //	mlx_instance_t is the instance(location) of an image.
 //	Think "in which instance of the window/display is the image"
@@ -72,4 +71,3 @@ void	move_left(t_game *game)
 	if (can_move(game, 0, -1))
 		perform_move(game, 0, -MOVE);
 }
-

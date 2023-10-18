@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 14:38:31 by ari               #+#    #+#             */
-/*   Updated: 2023/01/28 18:29:28 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:22:27 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 Compares up to "n" characters of two strings.
 3 parameters: 1st = a pointer to the first string
 2nd = a pointer to the second string
 3rd = the maximum number of characters to compare.
-Returns: 
+Returns:
 0 if the strings are equal
 a negative value if the 1st non-matching char in s1 is less than in s2.
 a postivie value if the 1st non-matching char in s1 is greater than in s2.

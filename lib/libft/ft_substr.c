@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 14:55:20 by ari               #+#    #+#             */
-/*   Updated: 2023/02/16 20:41:58 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:22:40 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
-/* 
-Takes a substring of the first string, 
+/*
+Takes a substring of the first string,
 and gives it it's own place in memory.
 3 Parameters: 1st = the initial string
 2nd = where to start the substring (index)
 3rd = max length of how long the substring should be.
 
-Returns a pointer to the substring. 
+Returns a pointer to the substring.
 
 */
 
@@ -63,7 +63,7 @@ int main (void)
   char *res;
 
   res = ft_substr(s, start, len);
-  
+
   printf("%s", res);
   free (res);
   return (0);

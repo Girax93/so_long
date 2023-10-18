@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 15:22:20 by ari               #+#    #+#             */
-/*   Updated: 2023/01/28 16:59:39 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:19:23 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
-converts a string to an integer. 
-1 parameter: the string to be converted. 
+converts a string to an integer.
+1 parameter: the string to be converted.
 */
 
 int		ft_atoi(const char *str);

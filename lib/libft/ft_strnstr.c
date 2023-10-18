@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 15:23:35 by ari               #+#    #+#             */
-/*   Updated: 2023/01/28 18:38:04 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:22:31 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 "strchr on steriods/for strings"
-The strnstr function finds the first occurrence of a substring in a string, 
+The strnstr function finds the first occurrence of a substring in a string,
 but with a maximum size limit for the search.
 3 parameters: 1st = a pointer to the string to be searched.
 2nd = a pointer to the substring to be searched for.
@@ -44,7 +44,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/* 
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -53,7 +53,7 @@ int main() {
     char needle[] = "World";
     char *result;
     size_t len = 15;
-    
+
     result = ft_strnstr(haystack, needle, len);
     if (result) {
         printf("Substring found: %s\n", result);

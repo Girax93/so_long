@@ -6,16 +6,15 @@
 /*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 15:35:28 by agrawe            #+#    #+#             */
-/*   Updated: 2023/10/12 18:09:57 by agrawe           ###   ########.fr       */
+/*   Updated: 2023/10/18 15:14:05 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-# include "../lib/libft/libft.h"
-# include "../include/ft_printf.h" // GET MY OWN PRINTF
-# include "../include/get_next_line.h" // GET MY OWN GNL
+# include "../include/libft.h"
+# include "../include/ft_printf.h"
 # include "../lib/MLX42/include/MLX42/MLX42.h"
 # include <stdio.h>
 # include <stdlib.h>
@@ -105,18 +104,24 @@ typedef struct s_game
 	int					last_drawn_y;
 }	t_game;
 
-// so_long.c
+// so_long.c && so_long_bonus.c
+// int		main(int argc, char **argv);
 int			init_game(t_game *game);
 int			validate_args(int argc, char *filename);
 
-// setup.c
+// setup.c &&
 void		set_settings(void);
 int			setup_game(t_game *game, char *filename);
 int			setup_graphics(t_game *game);
+// setup_bonus.c
+int			play_music(t_game *game);
+int			setup_music(t_game *game);
 
 // loop_hook.c
 void		my_loop_function(void *game);
 void		draw_animated_char(void *param);
+void		init_draw(t_game *game);
+void		update_positions(t_game *game);
 
 // key_hook.c
 void		my_key_hook(mlx_key_data_t keydata, void *param);
@@ -129,6 +134,7 @@ void		move_up(t_game *game);
 void		move_right(t_game *game);
 void		move_down(t_game *game);
 void		move_left(t_game *game);
+void		perform_move(t_game *game, int y_offset, int x_offset);
 
 // map.c
 int			check_extension(const char *fn);
@@ -148,6 +154,8 @@ void		delete_used_textures(t_textures *textures);
 
 // draw_images.c
 void		draw_image_on_tile(t_game *game, mlx_image_t *image, int x, int y);
+void		draw_map(t_game *game, t_images *image);
+void		draw_floor(t_game *game, t_images *image);
 
 // check_map.c
 int			check_map(char **map);
@@ -156,13 +164,14 @@ int			is_map_rectangular(char **map);
 int			are_map_elements_correct(char **map);
 int			is_map_surrounded_by_walls(char **map);
 
-// check_map2.c
+// check_map2.c && check_map_2_bonus.c
 int			has_map_necessary_tiles(char **map);
 int			is_tile_valid(char tile);
 void		count_tiles(char *s, int *exits, int *collectables, int *players);
 int			check_newlines(char *map);
 
 // map_path.c
+int			find_start_in_row(char *row);
 int			valid_path(t_game *game, char *fd);
 int			*start_pos(char **map);
 void		flood_map(t_game *game, int x, int y);
@@ -175,15 +184,10 @@ int			is_valid_tile(char tile);
 
 // collectibles.c
 int			total_collectibles(t_game *game);
-
-
-
-void		draw_map(t_game *game, t_images *image);
-void		my_key_hook(mlx_key_data_t keydata, void *param);
 void		collect_orbs(t_game *game);
 void		delete_orbs(t_game *game);
 
-// exit.c
+// exit.c && exit_bonus.c
 void		free_map(char **map);
 void		free_game_resources(t_game *game);
 void		exit_key(t_game *game, mlx_key_data_t keydata, int action);

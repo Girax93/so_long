@@ -6,7 +6,7 @@
 /*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/08 13:15:24 by agrawe            #+#    #+#             */
-/*   Updated: 2023/10/13 15:48:56 by agrawe           ###   ########.fr       */
+/*   Updated: 2023/10/18 14:55:04 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,6 @@ int	play_music(t_game *game)
 //	3.	Runs the play_music function on success.
 int	setup_music(t_game *game)
 {
-
 	if (SDL_Init(SDL_INIT_AUDIO < 0))
 	{
 		ft_printf("SDL Error: %s\n", SDL_GetError());
@@ -98,7 +97,6 @@ int	setup_music(t_game *game)
 	}
 	return (TRUE);
 }
-
 
 // Reads and stores the text of the map file in the game->map variable
 // Checks if the map is valid, and frees+returns if not

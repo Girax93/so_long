@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
-/* 
+/*
 checks if a character is printable.
 1 parameter: the character to be checked.
 */

@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 15:00:03 by ari               #+#    #+#             */
-/*   Updated: 2023/01/28 17:57:12 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:22:10 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 Allocates with malloc, and cocatinates 2 strings.
 2 parameters: 1st = the prefix string
 2nd = the suffix string.
-returns: the new string. NULL if allocation fails. 
+returns: the new string. NULL if allocation fails.
 */
 
 char	*ft_strjoin(char const *s1, char const *s2)

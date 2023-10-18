@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 13:07:19 by ari               #+#    #+#             */
-/*   Updated: 2023/01/28 17:14:16 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:21:22 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
-copies one memory area to another, even if the areas overlap. 
+copies one memory area to another, even if the areas overlap.
 3 parameters: 1st = a pointer to the destination memory area
 2nd = a pointer to the source memory area
 3rd = the number of bytes to copy.
@@ -28,7 +28,7 @@ int main(void)
 {
   int str[] = {100, 200, 300, 400 , 500};
 
-  if (ft_memmove(str + 2, str, sizeof str) == NULL) 
+  if (ft_memmove(str + 2, str, sizeof str) == NULL)
   {
     printf("Error: memcpy failed\n");
     return 1;

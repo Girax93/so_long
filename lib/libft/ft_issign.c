@@ -6,13 +6,13 @@
 /*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 14:20:59 by agrawe            #+#    #+#             */
-/*   Updated: 2023/07/26 14:23:58 by agrawe           ###   ########.fr       */
+/*   Updated: 2023/10/18 14:20:21 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 int	ft_issign(char c)
 {
-	return(c == '+' || c == '-');
+	return (c == '+' || c == '-');
 }

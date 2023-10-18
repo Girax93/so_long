@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
-/* 
-checks if a character is a letter. 
+/*
+checks if a character is a letter.
 1 parameter: the character to be checked.
 */
 

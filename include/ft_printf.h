@@ -3,28 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: erigolon <erigolon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/09 12:39:22 by erigolon          #+#    #+#             */
-/*   Updated: 2023/01/19 09:40:10 by erigolon         ###   ########.fr       */
+/*   Created: 2023/01/19 14:15:19 by ari               #+#    #+#             */
+/*   Updated: 2023/03/28 13:38:27 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
+# include <limits.h>
 # include <stdlib.h>
-# include <stdio.h>
 # include <unistd.h>
 # include <stdarg.h>
 
-int		ft_printf(char const *str, ...);
-int		ft_putcharf(char c);
-int		ft_check_percentage(char convert, va_list args, int count);
-int		ft_putstrf(char *str);
-char	*ft_itoa_u(unsigned int n);
-char	*ft_hex(unsigned long decimal, int mayus);
-char	*ft_itoa(int n);
-size_t	ft_strlen(const char *s);
+void	ft_putnbrc(int n, int *charcount);
+void	ft_putcharc(char c, int *charcount);
+void	ft_putstrc(char *s, int *charcount);
+void	ft_printaddressc(unsigned long p, int *charcount, char x);
+void	ft_putunsintc(unsigned int n, int *charcount);
+void	ft_printhexuc(unsigned int n, int *charcount, char x);
+int		ft_printf(const char *format, ...);
+void	ft_typefilter(const char *format, va_list args, int *charcount);
 
 #endif

@@ -6,11 +6,11 @@
 /*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 19:15:45 by agrawe            #+#    #+#             */
-/*   Updated: 2023/10/02 17:49:52 by agrawe           ###   ########.fr       */
+/*   Updated: 2023/10/18 14:23:07 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 Returns an int the RGB values converted to hex format.
@@ -22,7 +22,7 @@ int	encode_rgb(unsigned char red, unsigned char green, unsigned char blue)
 }
 
 // 'Encodes' four individual bytes into an int. a is for transparency
-int encode_rgba(int red, int green, int blue, int alpha)
+int	encode_rgba(int red, int green, int blue, int alpha)
 {
-    return (red << 24 | green << 16 | blue << 8 | alpha);
+	return (red << 24 | green << 16 | blue << 8 | alpha);
 }

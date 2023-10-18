@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
-/* 
-Sets all the bytes of a memory area to zero. 
-2 parameters: the first is a pointer to the memory area, 
+/*
+Sets all the bytes of a memory area to zero.
+2 parameters: the first is a pointer to the memory area,
 the second is the number of bytes to be set to zero.
 */
 

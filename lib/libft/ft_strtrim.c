@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 15:01:45 by ari               #+#    #+#             */
-/*   Updated: 2023/01/28 20:26:28 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:22:37 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
-/* 
+/*
 Short version: removes leading and trailing whitespace from a string.
 AKA: Removes the given character(s) from the beginning and end of string.
 Long version: finds the first character(s) to be trimmed away,
-then finds the last character(s) to be trimmed away. 
-Then allocates memory for the non-trimmed characters to be copied. 
-If multiple of the same characters are togehter, 
+then finds the last character(s) to be trimmed away.
+Then allocates memory for the non-trimmed characters to be copied.
+If multiple of the same characters are togehter,
 it will trim away all of them. */
 
 char	*ft_strtrim(char const *s1, char const *set)

@@ -6,11 +6,11 @@
 /*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 15:46:06 by ari               #+#    #+#             */
-/*   Updated: 2023/10/03 23:06:17 by agrawe           ###   ########.fr       */
+/*   Updated: 2023/10/18 14:19:38 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 allocates memory for an array of elements and sets all bytes to zero.

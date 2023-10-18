@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 14:19:19 by ari               #+#    #+#             */
-/*   Updated: 2023/02/04 21:32:21 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:22:34 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 "strchr in reverse"
@@ -42,7 +42,7 @@ char	*ft_strrchr(const char *str, int c)
 /*
 #include <stdio.h>
 
-int main(void) 
+int main(void)
 {
   char s[] = "Hellow, world!w";
   char *p = ft_strrchr(s, 'w');

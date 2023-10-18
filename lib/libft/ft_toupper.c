@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 16:39:02 by ari               #+#    #+#             */
-/*   Updated: 2023/01/28 20:38:12 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:22:46 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
-Converts a single character to its uppercase equivalent. 
+Converts a single character to its uppercase equivalent.
 1 Parameter: the character to be converted
 Returns: the uppercase equivalent of the character.
 */

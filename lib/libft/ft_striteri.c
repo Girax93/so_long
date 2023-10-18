@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/05 13:54:05 by ari               #+#    #+#             */
-/*   Updated: 2023/02/05 14:29:03 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:22:05 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 Applies the function ’f’ on each character of the string passed as argument.
 The address of each character is passed to ’f’ to be modified if necessary
 2 Parameters: 1st = the string to be modified
-2nd = the function that is used to modify the string. 
+2nd = the function that is used to modify the string.
 Returns = Nothing. Modifies the string in place.
 Note: Same as strmapi, except it doesn't create a new, modified string.
 */

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/12 21:29:05 by ari               #+#    #+#             */
-/*   Updated: 2023/02/13 00:49:58 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:20:35 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
 /*
 Adds a node to the end of the list.
@@ -44,7 +44,7 @@ int main(void)
 	t_list *node2 = (t_list *)malloc(sizeof(t_list));
 	t_list *node3 = (t_list *)malloc(sizeof(t_list));
 	t_list *new = (t_list *)malloc(sizeof(t_list));
-	
+
 	node1->content = malloc(sizeof(int));
 	node2->content = malloc(sizeof(int));
 	node3->content = malloc(sizeof(int));
@@ -56,11 +56,11 @@ int main(void)
 	node1->next = node2;
 	node2->next = node3;
 	node3->next = NULL;
-	
+
 	head = node1;
-	
+
 	ft_lstadd_back(&head, new);
-	
+
 	printf("Linked list after adding a new node:\n");
 	t_list *current = head;
 	while (current != NULL)
@@ -69,6 +69,6 @@ int main(void)
 	    current = current->next;
 	}
 	printf("\n");
-	
+
 	return 0;
 }*/

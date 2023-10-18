@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ari <marvin@42.fr>                         +#+  +:+       +#+        */
+/*   By: agrawe <agrawe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 22:34:52 by ari               #+#    #+#             */
-/*   Updated: 2023/01/28 17:02:50 by ari              ###   ########.fr       */
+/*   Updated: 2023/10/18 14:21:14 by agrawe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../include/libft.h"
 
-/* 
+/*
 searches for a character in a memory area of "n" bytes.
 3 parameters: 1st = a pointer to the memory area
 2nd = the character to search for
@@ -31,7 +31,7 @@ int	main(void)
 	char	*res;
 
     res = ft_memchr(str, c, n);
-	if	(res) 
+	if	(res)
 		printf("Char '%c' is at index %ld in string: %s\n", c, res - str, str);
 	else
 		printf("The character '%c' is not found in the string: %s\n", c, str);
